@@ -4,39 +4,49 @@
 <head>
   <title> Calulator-inator</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="container">
     <div class="display">
-
-    </div>
-
-    <div class="button-wrapper">
-      <div class="number-wrapper">
-        <button type="button" class="number" id="one-button"> 1 </button>
-        <button type="button" class="number" id="two-button"> 2 </button>
-        <button type="button" class="number" id="three-button"> 3 </button>
-        <button type="button" class="number" id="four-button"> 4 </button>
-        <button type="button" class="number" id="five-button"> 5 </button>
-        <button type="button" class="number" id="six-button"> 6 </button>
-        <button type="button" class="number" id="seven-button"> 7 </button>
-        <button type="button" class="number" id="eight-button"> 8 </button>
-        <button type="button" class="number" id="nine-button"> 9 </button>
-      </div>
-      <div class="function-wrapper">
-        <button type="button" class="function" id="add"> + </button>
-        <button type="button" class="function" id="subtract"> - </button>
-        <button type="button" class="function" id="multiply"> x </button>
-        <button type="button" class="function" id="divide"> &#247 </button>
-        <button type="button" class="function" id="decimal"> . </button>
-      </div>
-      <div class="equals-wrapper">
-        <button type="button" class="function" id="equals"> = </button>
+      <div class="display-screen">
+        <input type="text" name="calculator" class="display-text" value="" disabled />
       </div>
     </div>
+
+    <div class="grid-wrapper">
+
+        <button type="button" class="number" id="one-button" value="1"> 1 </button>
+        <button type="button" class="number" id="two-button" value="2"> 2 </button>
+        <button type="button" class="number" id="three-button" value="3"> 3 </button>
+        <button type="button" class="function" id="add" value="+"> + </button>
+
+        <button type="button" class="number" id="four-button" value="4"> 4 </button>
+        <button type="button" class="number" id="five-button" value="5"> 5 </button>
+        <button type="button" class="number" id="six-button" value="6"> 6 </button>
+        <button type="button" class="function" id="subtract" value="-"> - </button>
+
+
+        <button type="button" class="number" id="seven-button" value="7"> 7 </button>
+        <button type="button" class="number" id="eight-button" value="8"> 8 </button>
+        <button type="button" class="number" id="nine-button" value="9"> 9 </button>
+        <button type="button" class="function" id="multiply" value="x"> x </button>
+
+        <button type="button" class="function" id="clear" value="all-clear"> AC </button>
+        <button type="button" class="function" id="add" value="0"> 0 </button>
+        <button type="button" class="function" id="decimal" value="."> . </button>
+        <button type="button" class="function" id="divide" value="/"> &#247 </button>
+      </div>
+
+      <div class="equals-div">
+        <button type="button" class="function" id="equals" value="="> = </button>
+      </div>
+
   </div>
+
+  <script src="scripts.js"></script>
 
 </body>
 
