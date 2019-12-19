@@ -1,55 +1,63 @@
-.container {
-  width: 300px;
-  height: 500px;
-  background-color: grey;
-  margin: 0 auto;
-  margin-top: 50px;
+/* global styling */
+
+body {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #f35588, #FFBBB4);
 }
+
+/* grid layout for entire calculator */
+
+.calc-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+/* button css */
+
+.calc-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calc-grid button:hover {
+  background: rgba(255, 255, 255, .90);
+}
+
+.big-button {
+  grid-column: span 2;
+}
+
+/* display css */
 
 .display {
-  width: 100%;
-  height: 25%;
-  background-color: grey;
-}
-
-.display-screen {
-  width: 90%;
-  height: 90%;
-  background-color: white;
-  color: black;
-  margin: 0 auto;
-  border-top: 7px solid grey;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.display-screen p {
+  
+  grid-column: span 4;
+  background-color: rgba(0, 0, 0, .75);
   text-align: center;
-  margin-top: 40px;
+  word-wrap: break-word;
+  word-break: all;
 }
 
-.display-text {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 18px;
+.previous-equation {
+  color: rgba(255, 255, 255, .75);
+  margin-top: 10px;
+  font-size: 1.3em;
 }
 
-/* button wrapper */
-
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 50px 50px 50px 50px;
-}
-
-.equals-div {
-  width: 100%;
-  height: 50px;
-}
-
-.equals-div button {
-  height: 100%;
-  width: 100%;
-  margin: auto;
+#current-equation {
+  color: white;
+  margin-top: 20px;
+  font-size: 2.0em;
 }

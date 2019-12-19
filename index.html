@@ -4,50 +4,51 @@
 <head>
   <title> Calulator-inator</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
+<div class="container">
 
-  <div class="container">
+  <div class="calc-grid">
+
     <div class="display">
-      <div class="display-screen">
-        <input type="text" name="calculator" class="display-text" value="" disabled />
-      </div>
+      <div data-current-equation id="current-equation"> 0 </div>
     </div>
 
-    <div class="grid-wrapper">
+    <button class="calc-btn calc-btn-operator big-button" id="clear"> AC </button>
+    <button class="calc-btn calc-btn-operator" id="backspace"> &#8676 </button>
+    <button class="calc-btn calc-btn-operator" id="division"> ÷ </button>
 
-        <button type="button" class="number" id="one-button" value="1"> 1 </button>
-        <button type="button" class="number" id="two-button" value="2"> 2 </button>
-        <button type="button" class="number" id="three-button" value="3"> 3 </button>
-        <button type="button" class="function" id="add" value="+"> + </button>
+    <button class="calc-btn calc-btn-num" id="one"> 1 </button>
+    <button class="calc-btn calc-btn-num" id="two"> 2 </button>
+    <button class="calc-btn calc-btn-num" id="three"> 3 </button>
+    <button class="calc-btn calc-btn-operator" id="multiplication"> x </button>
 
-        <button type="button" class="number" id="four-button" value="4"> 4 </button>
-        <button type="button" class="number" id="five-button" value="5"> 5 </button>
-        <button type="button" class="number" id="six-button" value="6"> 6 </button>
-        <button type="button" class="function" id="subtract" value="-"> - </button>
+    <button class="calc-btn calc-btn-num" id="four"> 4 </button>
+    <button class="calc-btn calc-btn-num" id="five"> 5 </button>
+    <button class="calc-btn calc-btn-num" id="six"> 6 </button>
+    <button class="calc-btn calc-btn-operator" id="addition"> + </button>
 
+    <button class="calc-btn calc-btn-num" id="seven"> 7 </button>
+    <button class="calc-btn calc-btn-num" id="eight"> 8 </button>
+    <button class="calc-btn calc-btn-num" id="nine"> 9 </button>
+    <button class="calc-btn calc-btn-operator" id="subtraction"> - </button>
 
-        <button type="button" class="number" id="seven-button" value="7"> 7 </button>
-        <button type="button" class="number" id="eight-button" value="8"> 8 </button>
-        <button type="button" class="number" id="nine-button" value="9"> 9 </button>
-        <button type="button" class="function" id="multiply" value="x"> x </button>
+    <button class="calc-btn calc-btn-operator" id="decimal"> . </button>
+    <button class="calc-btn calc-btn-num" id="zero"> 0 </button>
+    <button class="calc-btn calc-btn-operator big-button" id="equals"> = </button>
 
-        <button type="button" class="function" id="clear" value="all-clear"> AC </button>
-        <button type="button" class="function" id="add" value="0"> 0 </button>
-        <button type="button" class="function" id="decimal" value="."> . </button>
-        <button type="button" class="function" id="divide" value="/"> &#247 </button>
-      </div>
+    </div>
 
-      <div class="equals-div">
-        <button type="button" class="function" id="equals" value="="> = </button>
-      </div>
+</div>
 
-  </div>
-
-  <script src="scripts.js"></script>
-
+</div>
 </body>
+
+<script src="scripts.js"></script>
 
 </html>
